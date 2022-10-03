@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNI-SHOPNGOO</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js"></script>
+</head>
+<body >
+    <div id="mySidenav" class="sidenav fontlogo">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">HOME</a>
+        <a href="sanpham1.html">PRODUCT</a>
+        <a href="gear.html">GAMING GEAR</a>
+        <a href="">GUN DAM</a>
+        <a href="">T-SHIRT</a>
+        <a href="">OTHER</a>
+      
+      </div>
+      
+      
+       
+      <div id="main" style="padding-left:200px;padding-right:200px " >
+        
+        <span  style="font-size:50px;cursor:pointer" onmousemove="openNav()">&#9776; </span>
+        
+        <div style ="text-align: center;" class="sticky"  >
+      <img src="anh/20feb6fdaaaf39c.gif" alt="ngo" style="width: 40px;">
+      <div class="fontlogo" style="margin:20px;font-size: 45px;">SHOPNGOO</div>
+      
+      
+      </div> 
+      <hr>
+      <div class="sanpham1 fontlogo">
+      <a href="index.html">HOME &#10140;</a>
+      <a href="sanpham1.html">PRODUCTS &#10140;</a>
+      <a href="">NEWS &#10140;</a>
+      <span > T-shirt Unisex ONI Original</span>
+    </div>
+  
+   
+  
+    
+    
+    <div class="container" >
+      <div class="aouni">
+        <img src="./anh/sanpham/sanpham1.jpg" style="width:100%">
+      </div>
+    
+      <div class="aouni">
+        <img src="./anh/sanpham/sanpham2.jpg" style="width:100%">
+      </div>
+    
+      <div class="aouni">
+        <img src="./anh/sanpham/sanpham3.jpg" style="width:100%">
+      </div>
+        
+      <div class="aouni">
+        <img src="./anh/sanpham/sanpham4.jpg" style="width:100%">
+      </div>
+    
+      <div class="aouni">
+      
+        <img src="./anh/sanpham/sanpham5.jpg" style="width:100%">
+      </div>
+        
+      
+        
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    
+    
+      <div class="row" style="">
+        <div class="column">
+          <img  src="./anh/sanpham/sanpham1.jpg" style="width:100%" onclick="currentSlide(1)" >
+        </div>
+        <div class="column">
+          <img  src="./anh/sanpham/sanpham2.jpg" style="width:100%" onclick="currentSlide(2)" >
+        </div>
+        <div class="column">
+          <img  src="./anh/sanpham/sanpham3.jpg" style="width:100%" onclick="currentSlide(3)" >
+        </div>
+        <div class="column">
+          <img  src="./anh/sanpham/sanpham4.jpg" style="width:100%" onclick="currentSlide(4)" >
+        </div>
+        <div class="column">
+          <img  src="./anh/sanpham/sanpham5.jpg" style="width:100%" onclick="currentSlide(5)" >
+        </div>    
+      
+      </div>
+         
+    </div>
+    
+    <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("aouni");
+      let dots = document.getElementsByClassName("demo");
+      let captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+        <div class="thongtinsp fontlogo"  >
+            <h2  style="text-align: center;font-size: 30px;">T-SHIRT UNISEX ONI - ORIGINAL</h2>
+            <hr style="width: 50%;">
+            <div class="trangthaisp"> 
+                <h3 style="">STATUS: </h3>
+                <h3 style="color: red;">STOCKING</h3>   
+                <h3 style="">AMOUNT:</h3>
+                <h3 style=" border-radius: 5px;
+                border: 2px solid #737573;
+                 boz-sizing:border-box;
+                 width:50px">999</h3>
+                <div class="trangthaisp"> 
+                  <h3 >SIZE:</h3>
+                  <select style="border:1px solid#dbdbdb ;color:#595959;height:34px;padding: 6px 27px 6px 8px;" >
+                    <option value="">S</option>
+                    <option value="">M</option>
+                    <option value="">L</option>
+                    <option value="">XS</option>
+                    <option value="">XL</option>
+
+                  </select>
+                  <h3 style="color: red;font-weight: 600;font-size: 50px;padding-left:250px ;">199.00$</h3>
+                  <div style="text-align: center;padding: 100px;">
+                  <button class="fontlogo" style="border-radius: 40px;padding: 20px;
+                  font-size: 30px;">ADD TO CART</button></div>
+                  </div>
+                </div>
+            </div>
+            <button class="fontlogo" style="border-radius: 40px;padding: 20px;
+                  font-size: 20px; border:10px;">PRODUCT INFOMATION</button>
+             <div class="thongtinchitiet">
+             
+        <img src="./anh/sanpham/thongtin1.jpg" alt="" style="">
+      
+      <div class="fontlogo">
+      <h4>Material: 100% cotton spandex, 2-way stretch, soft fabric, smooth fabric, cool, not ruffled
+        - Standard seams, meticulous, sure.
+        <h4>- Wear at home, go out or do sports. Suitable for mixing with a variety of items.</h4>
+        <h4>- Modern, youthful, dynamic design. Easy to put together.</h4>
+      </div>
+      <img src="./anh/sanpham/thongtin2.jpg" alt="">
+
+      
+      <div class="fontlogo">
+        <h4>-Size selection parameters:</h4>
+        <h4>-Size M: 1m50-1m60 (50-65kg)</h4>
+        <h4> -Size L: 1m55-1m70 (55-65kg)</h4>
+         <h4>-Size XL: 1m68-1m80 (60-70kg)</h4>
+         <h4>- XXL: 1m75-1m85 (70-80kg)</h4>
+        <h4> (The above table is for reference only, choose to wear a comfortable fit, size up and down depending on your dress preferences) No description.</h4>
+        <h4>Instructions for using Unisex Oni shirt:
+         <h4>- Remember to turn the shirt inside out when washing and do not soak it</h4>
+          <h4> - Do not machine wash in the first 10 days</h4>
+           <h4>- Do not use bleach</h4>
+          <h4> - When drying on the left side and not in direct sunlight</h4>
+       
+        <img src="./anh/sanpham/thongtin3.jpg" alt="">
+     <h4>-Ensure 100% quality 2-way cotton standard fabric. In stock, delivery immediately upon receipt of order. 100% refund if the product is defective, wrong or not the same as the description. Accept exchange when the size does not fit (please send a private message to the shop). Nationwide delivery, payment on receipt.</h4>
+     
+    </div>
+
+        </div>
+      </div>
+
+    
+
+     
+
+</body>
+</html>

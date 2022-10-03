@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product</title>
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+        *{
+            padding:0;
+            margin: 0;
+        }
+        body{
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+            line-height: 1.15;
+        }
+     
+        #wrapper{
+           
+            max-width: 1170;
+            margin: 0 auto;
+        }
+        .headline{
+            text-align: center;
+            margin: 40px 0px;
+        }
+        h3{
+            font-size: 18px;    
+            color: #111;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            border: 1px solid #bebebe;
+            display: inline-block;
+            color: #555;
+            font-weight: 600;
+        }
+        ul.products{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            list-style: none;
+
+
+        }
+        ul.products li {
+            flex-basis: 25%;
+            padding-left: 15px;
+            padding-right: 15px;
+            box-sizing: border-box;
+            margin-bottom: 30px;
+        }
+        ul.products li img{
+            max-width: 100%;
+            height: auto;
+        }
+        ul.products li .products-top{
+            position: relative;
+            overflow: hidden;
+        }
+        ul.products li .products-top .products-thumb {
+            display: block;
+        }
+        ul.products li .products-top .products-thumb img{
+            display: block; 
+        }ul.products li:hover .products-top .products-thumb img{
+            filter: opacity(70%);
+        }
+        ul.products li .products-top a.buy-now{
+            text-decoration: none;         
+            text-transform: uppercase;
+            text-align: center;
+            display: block;
+            background-color: #446084;
+            color:#fff;
+            padding: 10px 0px;
+            position: absolute;
+            bottom: -36px;
+            width: 100%;
+            transition: 0.25s ease-in-out;
+            opacity: 80%;
+        }
+        ul.products li:hover a.buy-now {
+            bottom: 0px;
+            
+        }
+        ul.products li .products-info{
+            padding:10px 0px ;
+        }
+        ul.products li .products-info a {
+            display: block;
+            text-decoration: none;
+
+
+        }
+        ul.products li .products-info a.products-cat{
+            font-size: 11px;    
+            color:#9e9e9e;
+            text-transform: uppercase;
+            padding:3px 0px;
+
+        }
+        ul.products li .products-info a.products-name{
+            color:#334682;
+            padding:3px 0px;
+        }
+        ul.products li .products-info .products-price{
+            color: #111;    
+            padding: 2px 0px;   
+            font-weight: 600;
+
+        }
+
+
+
+    </style>
+    <div id="wrapper">
+        <div class="headline">
+            <h3>san pham ban chay</h3>
+        </div>
+        <ul class="products">
+            <li>
+                <div class="products-item">
+                    <div class="products-top">
+                        <a href="" class="products-thumb">
+                        <img src="./anh/aosweater1.jpg" alt="">
+                    </a>
+                    <a href="" class="buy-now">Mua Ngay</a>
+                  
+                    </div>
+                    <div class="products-info">
+                       <a href="" class="products-cat">BAGS</a>
+                       <a href="" class="products-name">ao wibu</a>
+                       <div class="products-price">500.000d</div>
+                    </div>                
+                </div></li>
+                <li>
+                    <div class="products-item">
+                        <div class="products-top">
+                            <a href="" class="products-thumb">
+                            <img src="./anh/aosweater1.jpg" alt="">
+                        </a>
+                        <a href="" class="buy-now">Mua Ngay</a>
+
+                      
+                        </div>
+                        <div class="products-info">
+                           <a href="" class="products-cat">BAGS</a>
+                           <a href="" class="products-name">ao wibu</a>
+                           <div class="products-price">500.000d</div>
+                        </div>                
+                    </div></li>
+                    <li>
+                        <div class="products-item">
+                            <div class="products-top">
+                                <a href="" class="products-thumb">
+                                <img src="./anh/aosweater1.jpg" alt="">
+                            </a>
+                            <a href="" class="buy-now">Mua Ngay</a>
+
+                            
+                            </div>
+                            <div class="products-info">
+                               <a href="" class="products-cat">BAGS</a>
+                               <a href="" class="products-name">ao wibu</a>
+                               <div class="products-price">500.000d</div>
+                            </div>                
+                        </div></li>
+                        <li>
+                            <div class="products-item">
+                                <div class="products-top">
+                                    <a href="" class="products-thumb">
+                                    <img src="./anh/aosweater1.jpg" alt="">
+                                </a>
+                                <a href="" class="buy-now">Mua Ngay</a>
+
+                                
+                                </div>
+                                <div class="products-info">
+                                   <a href="" class="products-cat">BAGS</a>
+                                   <a href="" class="products-name">ao wibu</a>
+                                   <div class="products-price">500.000d</div>
+                                </div>                
+                            </div></li>
+                             <li>
+                                <div class="products-item">
+                                    <div class="products-top">
+                                        <a href="" class="products-thumb">
+                                        <img src="./anh/aosweater1.jpg" alt="">
+                                    </a>
+                                    <a href="" class="buy-now">Mua Ngay</a>
+
+                                
+                                    </div>
+                                    <div class="products-info">
+                                       <a href="" class="products-cat">BAGS</a>
+                                       <a href="" class="products-name">ao wibu</a>
+                                       <div class="products-price">500.000d</div>
+                                    </div>                
+                                </div></li>
+                                <li>
+                                    <div class="products-item">
+                                        <div class="products-top">
+                                            <a href="" class="products-thumb">
+                                            <img src="./anh/aosweater1.jpg" alt="">
+                                        </a>
+                                        <a href="" class="buy-now">Mua Ngay</a>
+
+                                       
+                                        </div>
+                                        <div class="products-info">
+                                           <a href="" class="products-cat">BAGS</a>
+                                           <a href="" class="products-name">ao wibu</a>
+                                           <div class="products-price">500.000d</div>
+                                        </div>                
+                                    </div></li>
+                                    <li>
+                                        <div class="products-item">
+                                            <div class="products-top">
+                                                <a href="" class="products-thumb">
+                                                <img src="./anh/aosweater1.jpg" alt="">
+                                            </a>
+                                            <a href="" class="buy-now">Mua Ngay</a>
+
+                                         
+                                            </div>
+                                            <div class="products-info">
+                                               <a href="" class="products-cat">BAGS</a>
+                                               <a href="" class="products-name">ao wibu</a>
+                                               <div class="products-price">500.000d</div>
+                                            </div>                
+                                        </div></li>
+                                        <li>
+                                            <div class="products-item">
+                                                <div class="products-top">
+                                                    <a href="" class="products-thumb">
+                                                    <img src="./anh/aosweater1.jpg" alt="">
+                                                </a>
+                                                <a href="" class="buy-now">Mua Ngay</a>
+
+                                              
+                                                </div>
+                                                <div class="products-info">
+                                                   <a href="" class="products-cat">BAGS</a>
+                                                   <a href="" class="products-name">ao wibu</a>
+                                                   <div class="products-price">500.000d</div>
+                                                </div>                
+                                            </div></li>
+        </ul>
+    </div>
+</body>
+</html>
